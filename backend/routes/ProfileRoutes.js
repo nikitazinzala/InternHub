@@ -9,8 +9,8 @@ const {
 } = require("../controller/ProfileController");
 
 router.post("/", createProfile);
-router.get("/:userId", getProfile);
-router.put("/:userId", updateProfile);
-router.delete("/:userId", deleteProfile);
+router.get("/:role/:userId", getProfile);
+router.put("/:role/:userId", updateProfile);
+router.delete("/:role/:userId", deleteProfile);
 
 module.exports = router;
