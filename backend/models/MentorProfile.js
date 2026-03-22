@@ -8,7 +8,6 @@ const mentorProfileSchema = new mongoose.Schema({
     unique: true
   },
 
-  // 🔹 Common Fields
   fullName: {
     type: String,
     required: [true, "Full name is required"],
@@ -61,8 +60,6 @@ const mentorProfileSchema = new mongoose.Schema({
     required: [true, "GitHub URL is required"],
     match: [/^https?:\/\/.+/, "Enter valid GitHub URL"]
   },
-
-  // 🔹 Mentor Specific Fields
 
   expertise: {
     type: String,

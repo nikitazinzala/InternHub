@@ -13,7 +13,6 @@ app.use(express.json());
 const profileRoutes = require("./routes/ProfileRoutes");
 app.use("/api/profile", profileRoutes);
 
-// DB Connection
 mongoose.connect("mongodb://127.0.0.1:27017/InternHub")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
